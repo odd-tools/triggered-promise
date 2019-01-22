@@ -1,0 +1,35 @@
+{
+  "name": "@odd-tools/triggered-promise",
+  "version": "1.0.0",
+  "description": "A promise that could be triggered externally",
+  "main": "build/triggered-promise.js",
+  "types": "build/types/src/triggered-promise.d.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odd-tools/triggered-promise.git"
+  },
+  "keywords": [
+    "triggered",
+    "promise"
+  ],
+  "author": "Anton Pilyak <a.pilyak@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/odd-tools/triggered-promise/issues"
+  },
+  "homepage": "https://github.com/odd-tools/triggered-promise#readme",
+  "devDependencies": {
+    "@types/jest": "^23.3.13",
+    "@types/node": "^10.12.18",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.0.1",
+    "typescript": "^3.2.4",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  }
+}
