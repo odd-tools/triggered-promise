@@ -10,9 +10,11 @@
         "es2015",
 	    "dom"
     ],
-    //"allowJs" : true,
     "allowSyntheticDefaultImports" : true,
     "declaration": true,
-    "declarationDir": "build/types"	
-  }
+  },
+  "include": [
+      "src/**/*"
+  ],
+  "exclude": ["node_modules"]
 }
