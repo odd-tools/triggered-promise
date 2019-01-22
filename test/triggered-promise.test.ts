@@ -1,4 +1,4 @@
-import {TriggeredPromise} from "../src/triggered-promise";
+import {TriggeredPromise} from "../dist/triggered-promise";
 
 describe("Promise resolved tests", () => {
     let triggeredPromise: TriggeredPromise<any>;
