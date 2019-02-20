@@ -1,5 +1,5 @@
 import  typescript from 'rollup-plugin-typescript2'
-import { uglify } from "rollup-plugin-uglify";
+import {terser} from 'rollup-plugin-terser'
 import pkg from './package.json'
 
 export default {
@@ -7,18 +7,15 @@ export default {
   output: [
     {
       file: pkg.main,
-      format: 'cjs',
+      name: 'TriggeredPromise',
+      format: 'esm',
       sourcemap: true,
     }
-  ],
-  external: [
-    ...Object.keys(pkg.dependencies || {}),
-    ...Object.keys(pkg.peerDependencies || {}),
   ],
 plugins: [
     typescript({
       typescript: require('typescript'),
     }),
-    (process.env.BUILD === 'production'? uglify() : {})
+  (process.env.BUILD === 'production' ? terser() : {})
   ]
 }

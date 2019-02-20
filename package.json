@@ -1,6 +1,6 @@
 {
   "name": "@odd-tools/triggered-promise",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "A promise that could be triggered externally",
   "main": "dist/triggered-promise.js",
   "types": "dist/triggered-promise.d.ts",
@@ -24,15 +24,16 @@
   },
   "homepage": "https://github.com/odd-tools/triggered-promise#readme",
   "devDependencies": {
-    "@types/jest": "^23.3.13",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@types/jest": "^24.0.6",
     "@types/node": "^10.12.18",
-    "jest": "^23.6.0",
+    "babel-jest": "^24.1.0",
+    "jest": "^24.1.0",
     "rollup": "^1.1.2",
+    "rollup-plugin-terser": "^4.0.4",
     "rollup-plugin-typescript2": "^0.19.2",
-    "rollup-plugin-uglify": "^6.0.1",
-    "ts-jest": "^23.10.5",
-    "ts-node": "^8.0.1",
-    "typescript": "^3.2.4",
-    "uglify-js": "^3.4.9"
+    "ts-jest": "^24.0.0",
+    "typescript": "^3.2.4"
   }
 }
