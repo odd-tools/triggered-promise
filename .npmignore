@@ -1,6 +1,9 @@
-/src
-/test
-./jest.config.ts
-./package-lock.json
-./rollup.config.js
-./tsconfig.json
+.idea/
+.rpt2_cache/
+node_modules/
+test/
+src/
+jest.config.js
+package-lock.json
+rollup.config.js
+tsconfig.json
